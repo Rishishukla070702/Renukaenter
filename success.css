@@ -1,0 +1,35 @@
+input[type="submit"] {
+  font-family: "Helvetica", serif;
+  width: 60%;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  border-radius: 10px;
+  align-items: center;
+}
+.registerbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  opacity: 0.9;
+  align-items: center;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+ul ol {
+  border: 1px solid #ddd; /* Add a thin border to each list item */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Add a grey background color */
+  padding: 12px; /* Add some padding */
+}

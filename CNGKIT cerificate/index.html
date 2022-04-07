@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="form-style-10">
+			<h1>Renuka Enterprises<span>CNG KIT INSTALLATION CERTIFICATE</span></h1>
+			<form>
+				<div class="section"><span>A</span>Name of Retrofitter</div>
+				<div class="inner-wrap">
+					<label
+						>Installation certificate issued by
+						<input type="text" name="certificate"
+					/></label>
+					<label
+						>Authorization Number of Retrofitter
+						<input type="text" name="authorization"
+					/></label>
+					<label
+						>Validity of Authorization <input type="date" name="date"
+					/></label>
+					<label
+						>Type of Approval Certificate Number & Date issued by testing agency
+						<input type="text" name="approval"
+					/></label>
+					<label>No. of date approval by the transport commissioner </label>
+					<table>
+						<tr>
+							<th>
+								<input type="number" name="NumberofApproval" />
+							</th>
+							<th>
+								<label style="margin-left: 100px" for="date"
+									>on<input type="date" />
+								</label>
+							</th>
+						</tr>
+					</table>
+				</div>
+
+				<!-- B -->
+
+				<div class="section"><span>B</span>Motor Vehicle Details</div>
+				<div class="inner-wrap">
+					<label
+						>Motor Vehicle Registration Number<input
+							type="text"
+							name="registrationNumber"
+					/></label>
+					<label>Type of Vehicle<input type="text" name="vehicleType" /></label>
+					<label>Makers Name<input type="text" name="makersName" /></label>
+					<label
+						>Cubic Capacity<input type="text" name="cubicCapacity"
+					/></label>
+					<label
+						>Date of Registration<input type="text" name="registrationDate"
+					/></label>
+				</div>
+
+				<!-- C -->
+
+				<div class="section"><span>C</span>CNG Kit Details</div>
+				<div class="inner-wrap">
+					<label
+						>Name of Kit Manufacturer <input type="text" name="kitManufacturer"
+					/></label>
+					<label>Brand Name <input type="text" name="brandName" /></label>
+				</div>
+
+				<!-- D -->
+
+				<div class="section"><span>D</span>Cylinder Details</div>
+				<div class="inner-wrap">
+					<label
+						>Cylinder Number<input type="number" name="cylinderNumber"
+					/></label>
+					<label
+						>Type of Cylinder<input type="text" name="cylinderType"
+					/></label>
+					<label
+						>Water Capacity<input type="text" name="waterCapacity"
+					/></label>
+					<label
+						>Approval Certificate Number & Date
+						<input id="approvalCertificate" type="text" name="approvalNumber" />
+						<input type="date" name="approvalDate"
+					/></label>
+
+					<label
+						>Hydro Test date<input name="hydroTestDate" type="text"
+					/></label>
+					<label
+						>Next Hydro Test date<input name="hydroTestDateNext" type="text"
+					/></label>
+				</div>
+
+				<!-- E -->
+				<div class="section"><span>E</span>Cylinder Valve</div>
+				<div class="inner-wrap">
+					<label>Valve Number<input type="text" name="valveNumber" /></label>
+					<label
+						>Name of Manufacturer<input
+							type="text"
+							name="manufacturerNameValve"
+					/></label>
+					<label>Type<input type="text" name="typeOfValve" /></label>
+				</div>
+
+				<!-- F -->
+				<div class="section"><span>F</span>Reducer / Vaporizer Number</div>
+				<div class="inner-wrap">
+					<label
+						>Name of Manufacturer<input
+							type="text"
+							name="manufacturerNameReducer"
+					/></label>
+					<label>Type of Valve<input type="text" name="valveType" /></label>
+					<label>Serial Number<input type="text" name="serialNumber" /></label>
+				</div>
+
+				<!-- G -->
+
+				<div class="section"><span>G</span>Refilling Valve</div>
+				<div class="inner-wrap">
+					<label
+						>Name of Manufacturer<input
+							type="text"
+							name="manufacturerNameRefillinh"
+					/></label>
+					<label>Type <input type="text" name="valveTypeRefilling" /></label>
+				</div>
+
+				<!-- H -->
+
+				<div class="section"><span>H</span>Fuel Line</div>
+				<div class="inner-wrap">
+					<label
+						>Diameter of High Pressure Turbing<input
+							type="text"
+							name="diameterHighPressure"
+					/></label>
+					<label
+						>Diameter Low Pressure Pipe
+						<input type="text" name="diameterLowPressure"
+					/></label>
+				</div>
+
+				<!-- I -->
+
+				<div class="section"><span>I</span>Shut off Valve (Solenoid Valve)</div>
+				<div class="inner-wrap">
+					<label>Make<input type="text" name="shutOffValveMake" /></label>
+					<label>Type <input type="text" name="shutOffValveType" /></label>
+					<label
+						>Operating Voltage
+						<input type="number" name="operatingVoltage" /> volts</label
+					>
+				</div>
+
+				<!-- J -->
+				<div class="section"><span>J</span>Fuel Selection Switch</div>
+				<div class="inner-wrap">
+					<label>Make<input type="text" name="fuelSelectioMake" /></label>
+					<label>Type <input type="text" name="fuelSelectionType" /></label>
+				</div>
+
+				<div class="button-section">
+					<input type="submit" name="Sign Up" />
+					<button id="submit" type="submit" class="btn btn-primary" onclick="printFunction()">
+						Print
+					</button>
+					<span class="privacy-policy">
+						<input type="checkbox" name="field7" />You agree to our Terms and
+						Policy.
+					</span>
+				</div>
+			</form>
+			
+		</div>
+		<script>
+			function printFunction() { 
+        window.print(); 
+      }
+		</script>
+	</body>
+</html>

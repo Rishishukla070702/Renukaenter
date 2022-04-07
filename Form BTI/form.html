@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="form.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- <div class="container" style="text-align: center">
+			<h3>FORM B.T.I.</h3>
+
+			<span class="d-block">[See Rule 57 (1)]</span>
+
+			<span><b>Notice in regard to alteration in a motor vehicle</b> </span>
+		</div>
+		<div class="container">
+			<p>To,</p>
+			<form action="" class="">
+				<div class="row">
+					<div class="col-md-6">
+						<p>The registering Authority</p>
+						<input type="text" class="form-control" />
+					</div>
+					<div class="col-md-6">
+						<p>I,</p>
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<p>Owner of Motor Vehicle</p>
+						<input type="text" class="form-control" />
+					</div>
+					<div class="col-md-6">
+						<p>Residing At,</p>
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						hereby give you the notice that I desire to make the following
+						alterations to the said vehicle:
+					</p>
+					<textarea name="" id="" cols="30" rows="10" class="form-control">
+					</textarea>
+				</div>
+			</form>
+		</div> -->
+		<div class="form-body">
+			<div class="row">
+				<div class="form-holder">
+					<div class="form-content">
+						<div class="form-items">
+							<div>
+								<h3>Form B.T.I</h3>
+								<span
+									><p>[See Rule 57 (1)]</p>
+									<p>Notice in regard to alteration in a motor vehicle</p>
+								</span>
+							</div>
+							<p style="font-size: 0.9rem">To,</p>
+							<form id="Print" class="requires-validation" novalidate>
+								<div class="col-md-12">
+									<input
+										class="form-control"
+										type="text"
+										name="name"
+										placeholder="Registering Authority"
+										required
+									/>
+									<div class="valid-feedback">Authority field is valid!</div>
+									<div class="invalid-feedback">
+										Authority field cannot be blank!
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<p class="mt-3">I,</p>
+									<input
+										class="form-control"
+										type="text"
+										name="name"
+										placeholder="Your Name"
+										required
+									/>
+									<div class="valid-feedback">Name field is valid!</div>
+									<div class="invalid-feedback">
+										Name field cannot be blank!
+									</div>
+								</div>
+                                <p id="text" style="font-size: 0.9rem">Owner of Motor Vehicle No.</p>
+								<div class="col-md-12">
+									<input
+										class="form-control"
+										type="text"
+										name="vehicle"
+										placeholder="Motor Vehicle No."
+										required
+									/>
+									<div class="valid-feedback">Vehicle fiels is valid!</div>
+									<div class="invalid-feedback">
+										Vehicle field cannot be blank
+									</div>
+								</div>
+								<p id="text" style="font-size: 0.9rem">Residing At</p>
+
+								<div class="col-md-12">
+									<input
+										class="form-control"
+										type="text"
+										name="residence"
+										placeholder="Residing At"
+										required
+									/>
+									<div class="valid-feedback">Password field is valid!</div>
+									<div class="invalid-feedback">
+										Password field cannot be blank!
+									</div>
+								</div>
+
+								<div class="col-md-12 mt-3">
+									<p>
+										hereby give you the notice that I desire to make the
+										following alterations to the said vehicle:
+									</p>
+									<section
+										class="form-select"
+										aria-label="Default select example"
+									>
+										<option value="cng" selected>CNG and Conversion</option>
+									</section>
+								</div>
+
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="invalidCheck"
+										required
+									/>
+									<label class="form-check-label"
+										>I confirm that all data are correct</label
+									>
+									<div class="invalid-feedback">
+										Please confirm that the entered data are all correct!
+									</div>
+								</div>
+							
+
+								<div class="form-button mt-3">
+									<a id="submit" type="submit" class="btn btn-primary" href="form2.html">
+										Register and continue
+									</a>
+								</div>
+							</form>
+							<input type="button" value="Print this page" onclick="printFunction()">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+			
+			
+		></script>
+		<script>
+			function printFunction() { 
+        window.print(); 
+      }
+		</script>
+		<script src="/index.js"></script>
+	</body>
+</html>

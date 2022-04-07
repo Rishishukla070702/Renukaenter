@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="BTI.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    
+    <div class="container">
+        <div class="title">Renuka Entreprises</div>
+        <div class="vehicles">BTI Form </div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Name</span>
+                  <input type="text" placeholder="Enter your Name" id="name" required>
+                </div> 
+                <div class="input-box">
+                  <span class="details">Address</span>
+                  <input type="text" placeholder="Enter your address" id="address" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Registration Mark Number</span>
+                  <input type="text" placeholder="Enter Registration Mark Number " id="registration" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Payment</span>
+                  <input type="text" placeholder="Enter Payment(Rs)" id="payment" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Tax</span>
+                  <input type="text" placeholder="Enter your Tax " id="tax" required>
+                </div>
+                
+                <div class="input-box">
+                  <span class="details">Date of Registration</span>
+                  <input type="date" placeholder=""  required>
+                </div>
+              </div>
+              
+              <button type="button" onclick="getInputValue();" class="submit">Submit</button>
+    
+          </form>
+        </div>
+        <p class="para">
+            I <span id="updatename" class="update">............</span> residing at <span class="update" id="updateaddress">..............</span> hereby declare that I <span id="updatename">............</span>
+            my motor vehicle bearing registration mark No. <span class="update" id="updateregistration">...................</span> in the following manner.<br>
+            Thereby making it liable to higher rate of tax under the Bombay motor vehicles<br>
+            Tax Act , 1958<br>
+            I tender Rs <span id="updateRs" class="update">..........</span> in payment of additional tax due upto<span id="updatetax">...........</span> I also
+        </p>
+      </div>
+      <script>
+        function getInputValue() {
+        // Selecting the input element and get its value 
+        let name = document.getElementById("name").value;
+        // Displaying the value
+        document.getElementById('updatename').innerHTML=name;
+
+        let address = document.getElementById("address").value;
+        // Displaying the value
+        document.getElementById('updateaddress').innerHTML=address;
+
+        let registration = document.getElementById("registration").value;
+        // Displaying the value
+        document.getElementById('updateregistration').innerHTML=registration;
+
+        let payment = document.getElementById("payment").value;
+        // Displaying the value
+        document.getElementById('updateRs').innerHTML=payment;
+
+        let tax = document.getElementById("tax").value;
+        // Displaying the value
+        document.getElementById('updatetax').innerHTML=tax;
+      }
+
+      </script>
+</body>
+</html>
